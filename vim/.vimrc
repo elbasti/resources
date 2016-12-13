@@ -68,9 +68,12 @@ noremap ;w <C-W>
 noremap ;n :NERDTreeToggle<CR>
 
 """"""""""
-" use pathogen to load all plugins
 
+" Fountain files:
+au BufRead,BufNewFile *.fountain	set filetype=fountain 
+
+
+" use pathogen to load all plugins
 execute pathogen#infect()
 
 filetype plugin indent on
-
